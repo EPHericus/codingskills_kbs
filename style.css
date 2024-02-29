@@ -8,15 +8,18 @@ h1, h2, h3 {
   font-family: Helvetica;
 }
 
+h2 {
+  font-size: 30px;
+}
+
 p {
   color: #404042;
   opacity: .7;
-
 }
 
 a {
-  color: #ccd4ff;
-  opacity: .7;
+  color: #003399;
+  opacity: .9;
 }
 
 .container {
@@ -25,7 +28,7 @@ a {
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/europe.png');
   background-size: cover;
   background-position: center;
   padding: 150px 0;
@@ -44,7 +47,7 @@ a {
 }
 
 .button-blue {
-  background-color: #1A48E3;
+  background-color: #003399;
   color: white;
   padding: 16px 48px;
   border-radius: 4px;
@@ -80,13 +83,46 @@ a {
 }
 
 .footer {
-  background: #404042;
+  background: #001c54;
   text-align: center;
   padding: 24px 0;
 }
 
 .footer p {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  padding: 15px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   color: white;
+  background-color: #555;
+  text-align: center;
+  line-height: 45px;
+  text-decoration: none;
+}
+
+.social-icon.linkedin {
+  background-color: #0077b5;
+}
+
+.social-icon.twitter {
+  background-color: #1da1f2;
+}
+
+.social-icon.instagram {
+  background-color: #e1306c;
+}
+
+.social-icon i {
+  font-size: 20px;
 }
 
 .cards {
@@ -103,4 +139,33 @@ a {
   color: #0D1EC6;
   font-weight: bold;
   text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-white {
+    width: auto;
+  }
+}
+
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
 }
